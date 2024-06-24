@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func clearAction(_ sender: Any) {
+    @IBAction func cleanAction(_ sender: Any) {
         if counter != 0 {
             counter = 0 }
         counterLabel.text = "Значение счётчика: \(counter)"
