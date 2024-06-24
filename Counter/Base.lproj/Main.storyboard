@@ -52,6 +52,14 @@
                                     <action selector="cleanAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q80-7x-Rt6"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="История изменений:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ni5-lk-cjo">
+                                <rect key="frame" x="76" y="362" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -59,6 +67,7 @@
                     <connections>
                         <outlet property="CounterLabel" destination="tNa-F7-eaJ" id="IH4-o2-bcH"/>
                         <outlet property="cleanButton" destination="mXI-s5-Q9E" id="GGq-BW-8Jt"/>
+                        <outlet property="counterHistory" destination="Ni5-lk-cjo" id="4Ux-hB-Uub"/>
                         <outlet property="counterLabel" destination="tNa-F7-eaJ" id="Gx0-Xt-YB3"/>
                         <outlet property="counterMinusButton" destination="crF-SQ-QJN" id="750-ud-2vY"/>
                         <outlet property="counterPlusButton" destination="GK9-ba-7pl" id="KSu-Jv-wpM"/>
@@ -73,6 +82,9 @@
         <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
         <image name="minus" catalog="system" width="128" height="26"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
